@@ -193,7 +193,6 @@ h2 {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     z-index: 10;
     opacity: 0;
     visibility: hidden;
