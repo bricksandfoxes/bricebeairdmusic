@@ -1,5 +1,3 @@
-// Add these functions to your existing script.js
-
 function toggleMobileMenu() {
     const mobileNav = document.getElementById('mobileNav');
     const menuToggle = document.querySelector('.mobile-menu-toggle');
@@ -7,11 +5,10 @@ function toggleMobileMenu() {
     mobileNav.classList.toggle('active');
     menuToggle.classList.toggle('active');
     
-    // Prevent body scroll when menu is open
     if (mobileNav.classList.contains('active')) {
         document.body.style.overflow = 'hidden';
     } else {
-        document.body.style.overflow = 'hidden'; // Keep your existing overflow settings
+        document.body.style.overflow = 'hidden'; 
     }
 }
 
@@ -21,10 +18,9 @@ function closeMobileMenu() {
     
     mobileNav.classList.remove('active');
     menuToggle.classList.remove('active');
-    document.body.style.overflow = 'hidden'; // Keep your existing overflow settings
+    document.body.style.overflow = 'hidden'; 
 }
 
-// Close menu when clicking outside
 document.addEventListener('click', function(event) {
     const mobileNav = document.getElementById('mobileNav');
     const menuToggle = document.querySelector('.mobile-menu-toggle');
@@ -35,6 +31,3 @@ document.addEventListener('click', function(event) {
         closeMobileMenu();
     }
 });
-
-// Your existing sendEmail function and other code stays the same...
-// ... rest of your existing script.js code

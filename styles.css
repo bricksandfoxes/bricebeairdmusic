@@ -173,7 +173,6 @@ h2 {
     font-weight: 100;
     letter-spacing: 0.20rem;
     text-align: center; /* Center the text */
-    display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
