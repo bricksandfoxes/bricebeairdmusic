@@ -313,30 +313,32 @@ h2 {
     }
     
     .main-content {
-        height: calc(100vh - 5rem); /* Better height calculation */
-        justify-content: center; /* Ensure proper centering */
+        height: calc(100vh - 4rem); /* Same as 320px */
+        padding: 0 0.5rem; /* Same padding as 320px */
+        justify-content: center; 
     }
     
     body {
         background-size: cover;
-        background-position: center top; 
-        background-attachment: scroll; 
+        background-position: center center; /* Same as 320px */
+        background-attachment: scroll;
+        min-height: 100vh; /* Added like 320px */
     }
     
     header {
-        padding: 1rem; /* Reduce header padding on mobile */
+        padding: 0.5rem; /* Same as 320px */
     }
     
     .mobile-nav-list {
-        gap: 2.5rem;
+        gap: 2rem; /* Same as 320px */
     }
     
     .mobile-nav-list a {
-        font-size: 1.8rem;
+        font-size: 1.5rem; /* Same as 320px */
     }
     
     .mobile-menu-toggle {
-        font-size: 1.25rem;
+        font-size: 1.1rem; /* Same as 320px */
     }
 }
 
