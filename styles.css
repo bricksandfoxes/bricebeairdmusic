@@ -191,12 +191,14 @@ h2 {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly darker for better visibility */
     backdrop-filter: blur(10px);
-    z-index: 10;
+    z-index: 1000; /* Increased z-index */
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
+    justify-content: center; /* Add this for centering */
+    align-items: center; /* Add this for centering */
 }
 
 .mobile-nav.active {
@@ -211,7 +213,7 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 100vh; 
     gap: 3rem;
     list-style: none;
     margin: 0;
@@ -287,6 +289,13 @@ h2 {
     .header-container {
         width: 100%; /* Ensure full width */
         justify-content: center;
+        padding: 0; /* Remove any padding */
+    }
+    
+    header {
+        padding: 1rem 0; /* Only vertical padding, no horizontal */
+        width: 100%; /* Ensure header doesn't exceed viewport */
+        box-sizing: border-box; /* Include padding in width calculation */
     }
 }
 
@@ -296,7 +305,8 @@ h2 {
     }
     
     h2 {
-        font-size: 1.25rem;
+        font-size: 1rem;
+        margin: -10px;
     }
     
     h4 {
@@ -312,32 +322,35 @@ h2 {
     }
     
     .main-content {
-        height: calc(100vh - 4rem); /* Same as 320px */
-        padding: 0 0.5rem; /* Same padding as 320px */
+        height: calc(100vh - 4rem);
+        padding: 0 0.5rem 5rem 0.5rem;
         justify-content: center; 
+        gap: 1rem;
     }
     
     body {
         background-size: cover;
-        background-position: center center; /* Same as 320px */
+        background-position: center center;
         background-attachment: scroll;
-        min-height: 100vh; /* Added like 320px */
+        min-height: 100vh;
     }
     
     header {
-        padding: 0.5rem; /* Same as 320px */
+        padding: 0.5rem 0; /* Only vertical padding */
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .mobile-nav-list {
-        gap: 2rem; /* Same as 320px */
+        gap: 2rem;
     }
     
     .mobile-nav-list a {
-        font-size: 1.5rem; /* Same as 320px */
+        font-size: 1.5rem;
     }
     
     .mobile-menu-toggle {
-        font-size: 1.1rem; /* Same as 320px */
+        font-size: 1.1rem;
     }
 }
 
@@ -362,7 +375,9 @@ h2 {
     }
     
     header {
-        padding: 0.5rem; 
+        padding: 0.5rem 0; /* Only vertical padding */
+        width: 100%;
+        box-sizing: border-box;
     }
     
     ul {
